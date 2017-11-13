@@ -22,29 +22,30 @@
 
                 <li><a href="./ventas.php"><i class="mdi mdi-shopping"></i> Vender </a></li>
 
-                <li><a href="./productos.php"><i class="mdi mdi-tag"></i> Productos </a></li>
-
-                <li><a href="./almacen.php"><i class="mdi mdi-hanger"></i> Inventario </a></li>
-                <!-- <li>
-                    <a href="javascript: void(0);" aria-expanded="true"><i class="mdi mdi-tag"></i> Productos <span class="fa arrow"></span></a>
-                    <ul class="nav-second-level nav" aria-expanded="true">
-                        <li><a href="forms-general.html">Nuevo producto</a></li>
-                        <li><a href="forms-advanced.html">Buscar producto</a></li>
-                    </ul>
-                </li> -->
-
-                <li><a href="./proveedores.php"><i class="mdi mdi-hanger"></i> Proveedores </a></li>
-
-                <li><a href="#"><i class=" mdi mdi-worker"></i> Empleados </a></li>
-
+                
                 <li>
-                    <a href="javascript: void(0);" aria-expanded="true"><i class="ti-light-bulb"></i> Reportes <span class="fa arrow"></span></a>
+                    <a href="javascript: void(0);" aria-expanded="true"><i class="mdi mdi-folder"></i> Catálogo de productos <span class="fa arrow"></span></a>
                     <ul class="nav-second-level nav" aria-expanded="true">
-                        <li><a href="components-range-slider.html">Ventas</a></li>
-                        <li><a href="components-alerts.html">Proveedores</a></li>
-                        <li><a href="components-icons.html">Almacén</a></li>
+                        <li><a href="./productos.php"> Administrar productos </a></li>
+                        <li><a href="./categorias-productos.php"> Administrar categorías </a></li>
                     </ul>
                 </li>
+                
+                <li>
+                    <a href="javascript: void(0);" aria-expanded="true"><i class="mdi mdi-hanger"></i> Inventario <span class="fa arrow"></span></a>
+                    <ul class="nav-second-level nav" aria-expanded="true">
+                        <li><a href="./almacen.php"> Administrar inventario </a></li>
+                        <li><a href="./entradas-inventario.php"> Historial de entradas </a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./proveedores.php"><i class="mdi mdi-package"></i> Proveedores </a></li>
+
+                <li><a href="./empleados.php"><i class="mdi mdi-worker"></i> Empleados </a></li>
+                
+                <li><a href="./historial-ventas.php"><i class="mdi mdi-format-list-bulleted"></i> Historial de ventas </a></li>
+                
+                <li><a href="./informes.php"><i class="mdi mdi-poll"></i> Informes </a></li>
 
             </ul>
         </div>

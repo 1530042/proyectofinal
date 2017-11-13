@@ -40,14 +40,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="widget-inline-box text-center">
-                            <h3><i class="text-primary mdi mdi-shopping"></i> <b data-plugin="counterup">8954</b></h3>
+                            <h3><i class="text-primary mdi mdi-shopping"></i> <b data-plugin="counterup">54</b></h3>
                             <p class="text-muted">Ventas de hoy</p>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="widget-inline-box text-center">
-                            <h3><i class="text-info mdi mdi-black-mesa"></i> <b data-plugin="counterup">6521</b></h3>
+                            <h3><i class="text-info mdi mdi-black-mesa"></i> <b data-plugin="counterup">629</b></h3>
                             <p class="text-muted">Ventas del mes</p>
                         </div>
                     </div>
@@ -57,16 +57,7 @@
         </div>
     </div>
     
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card-box">
-                <h4 class="m-t-0">Productos más vendidos</h4>
-                <div class="text-center">
-                   
-                </div>
-                
-            </div>
-        </div> <!-- end col -->
+    
     
     
 </div>

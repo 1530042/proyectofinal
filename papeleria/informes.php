@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Summernote css -->
-    <link href="./assets/plugins/summernote/summernote.css" rel="stylesheet" />
     
     <?php include_once('php/inc/head.php')?>
-
+    
     <body>
-
         <div id="page-wrapper">
-
             <!-- Top Bar Start -->
-           
-                <?php include_once('php/inc/top-bar.php')?>
-            
+            <?php include_once('php/inc/top-bar.php')?>
             <!-- Top Bar End -->
 
 
@@ -26,7 +20,8 @@
                 <!-- START PAGE CONTENT -->
                 <div id="page-right-content">
 
-                    <?php include_once('php/perfil-contenido.php')?>
+                    <?php include_once('php/informes-contenido.php')?>
+                    
                     <!-- end container -->
 
                     <?php include_once('php/inc/footer.php') ?>
@@ -39,11 +34,10 @@
         </div>
         <!-- End #page-wrapper -->
 
-        
-        <?php include_once('php/inc/librerias.php') ?>
-        
-        <script src="./assets/plugins/summernote/summernote.min.js"></script>
 
+
+        <?php include_once('php/inc/librerias.php')?>
+        
         <script type="text/javascript">
             $(document).ready(function() {
                 $('.summernote').summernote({
@@ -55,17 +49,17 @@
             });
 
             var day_data = [
-              {"elapsed": "Enero", "value": 34},
-              {"elapsed": "Febrero", "value": 24},
-              {"elapsed": "Marzo", "value": 3},
-              {"elapsed": "Abril", "value": 12},
-              {"elapsed": "Mayo", "value": 13},
-              {"elapsed": "Junio", "value": 22},
-              {"elapsed": "Agosto", "value": 5},
-              {"elapsed": "Septiembre", "value": 26},
-              {"elapsed": "Octubre", "value": 12},
-              {"elapsed": "Noviembre", "value": 19},
-                {"elapsed": "Diciembre", "value": 29}
+              {"elapsed": "Enero", "value": 120},
+              {"elapsed": "Febrero", "value": 430},
+              {"elapsed": "Marzo", "value": 510},
+              {"elapsed": "Abril", "value": 119},
+              {"elapsed": "Mayo", "value": 312},
+              {"elapsed": "Junio", "value": 222},
+              {"elapsed": "Agosto", "value": 341},
+              {"elapsed": "Septiembre", "value": 262},
+              {"elapsed": "Octubre", "value": 412},
+              {"elapsed": "Noviembre", "value": 619},
+                {"elapsed": "Diciembre", "value": 529}
             ];
             Morris.Line({
                 element: 'graph',
@@ -77,7 +71,6 @@
                 parseTime: false
             });
         </script>
-        
         
 
     </body>

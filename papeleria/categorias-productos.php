@@ -18,7 +18,7 @@
                 <!-- START PAGE CONTENT -->
                 <div id="page-right-content">
 
-                    <?php include_once('php/proveedores-contenido.php')?>
+                    <?php include_once('php/categorias-productos-contenido.php')?>
                     
                     <!-- end container -->
 
@@ -31,26 +31,30 @@
             <!-- end .page-contentbar -->
         </div>
         <!-- End #page-wrapper -->
-        
+
+
+
         <?php include_once('php/inc/librerias.php')?>
         
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('#datatable-responsive').DataTable();
-                
-                var table = $('#datatable-fixed-col').DataTable({
-                    scrollY: "300px",
-                    scrollX: true,
-                    scrollCollapse: true,
-                    paging: false,
-                    fixedColumns: {
-                        leftColumns: 1,
-                        rightColumns: 1
-                    }
+            $( document ).ready(function() {
+                Morris.Bar({
+                    element: 'graph',
+                    data: [
+                        {x: 'Artículos de oficina', y: 3},
+                        {x: 'Papeleria', y: 5},
+                        {x: 'Artículos de computo', y: 10},
+                        {x: 'Escolares', y: 7}
+                    ],
+                    xkey: 'x',
+                    ykeys: ['y'],
+                    labels: ['Cantidad'],
+                    xLabelAngle: 0
+                }).on('click', function(i, row){
+                    console.log(i, row);
                 });
-            });
-        </script>
-        
-        
+            });    
+        </script>   
+
     </body>
 </html>

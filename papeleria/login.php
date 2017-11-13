@@ -1,3 +1,12 @@
+<?php
+require 'php/programacion/funciones.php';
+
+if(sesionIniciada()){
+    header('Location: index.php');
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <?php include_once('php/inc/head.php')?>
@@ -21,7 +30,7 @@
                                     <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
                                 </div>
                                 <div class="account-content">
-                                    <form class="form-horizontal" action="#">
+                                    <form class="form-horizontal" action="php/programacion/iniciar-sesion.php" method="POST">
 
                                         <div class="form-group m-b-20">
                                             <div class="col-xs-12">
@@ -58,6 +67,11 @@
                                     </form>
 
                                     <div class="clearfix"></div>
+                                    <div class="row m-t-50">
+                                        <div class="col-sm-12 text-center">
+                                            <p class="text-muted">¿No tienes una cuenta? <a href="./registro.php" class="text-dark m-l-5">Registrate</a></p>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
