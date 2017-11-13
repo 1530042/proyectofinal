@@ -10,11 +10,12 @@
             </div>
         </div>
     </div>
+
     
     <div class="row">
         <div class="col-md-12">
             <div class="panel-body">
-                <div class="clearfix">
+                <div class="clearfix" >
                     <div class="col-sm-6 col-xs-6">
                         <div class="pull-left">
                             <p class="text-muted">Agrega, visualiza o modifica tus productos en un sólo lugar.</p>
@@ -22,10 +23,7 @@
                     </div>
                     <div class="col-sm-6 col-xs-6">
                         <div class="pull-right">
-                            <!--<button type="button" class="btn btn-primary btn-rounded"></button>-->
-<!--                            <button type="button" class="btn btn-primary btn-rounded">Modificar producto</button>-->
                             <button class="btn btn-primary btn-rounded waves-effect waves-light" data-toggle="modal" data-target="#nuevoProducto-Modal">Nuevo producto</button>
-                            <button class="btn btn-primary btn-rounded waves-effect waves-light p-t-25" data-toggle="modal" data-target="#">Administrar categorías</button>
                         </div>
                     </div>
                 </div>
@@ -48,10 +46,90 @@
                         <th>Nombre o descripción del producto</th>
                         <th>Precio de costo</th>
                         <th>Precio de venta</th>
-                        <th>Departamento</th>
+                        <th>Categoría</th>
+                        <th>Opciones</th>
                     </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>1457880017</td>
+                            <td>Laptop HP DELL 100 gb RAM</td>
+                            <td>$12.50</td>
+                            <td>$14.50</td>
+                            <td>Computo</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1127480017</td>
+                            <td>Mouse inalámbrico DELL</td>
+                            <td>$120.50</td>
+                            <td>$200.00</td>
+                            <td>Computo</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1237880012</td>
+                            <td>Boligrafo punto fino</td>
+                            <td>$2.50</td>
+                            <td>$5.00</td>
+                            <td>Artículos de oficina</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1247880012</td>
+                            <td>Libreta tamaño carta 100 hojas</td>
+                            <td>$10.50</td>
+                            <td>$15.00</td>
+                            <td>Escolares</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1127480052</td>
+                            <td>Carpeta color marrón</td>
+                            <td>$1.50</td>
+                            <td>$5.00</td>
+                            <td>Escolares</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -64,7 +142,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Nuevo prducto</h4>
+                <h4 class="modal-title">Nuevo producto</h4>
             </div>
             <div class="modal-body">
                 <form role="form" class="form-validation">
@@ -113,7 +191,7 @@
                     <div class="form-group row pull-center">
                         <div class="col-sm-8">
                             <label for="categoria" class="form-control-label">Categoría<span class="text-danger">*</span></label>
-                            <select class="form-control select2" id="categoria">
+                            <select class="form-control select col-sm-12" id="categoria">
                                 <option>Selecciona una categoria</option>
                             </select>
                         </div>
@@ -123,11 +201,6 @@
                     </div>
                         
                     <div class="form-group row">
-                        <div class="col-sm-6">
-                            <label for="cantidadActual" class="form-control-label">Cantidad actual</label>
-                            <input type="number" parsley-type="change" class="form-control"
-                                   id="cantidadActual" value="0" min="0">                            
-                        </div>
 
                         <div class="col-sm-6">
                             <label for="cantidadMinima" class="form-control-label">Cantidad mínima<span class="text-danger">*</span></label>
@@ -143,7 +216,6 @@
                             <div class="col-xs-6 col-sm-6">
                                 <button type="submit" class="btn btn-primary waves-effect waves-light col-sm-12">Agregar producto</button>
                             </div>
-                          
                             <div class="col-xs-3 col-sm-3"></div>
                     </div>
                 </form>

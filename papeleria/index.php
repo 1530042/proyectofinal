@@ -35,18 +35,36 @@
         <?php include_once('php/inc/librerias.php') ?>
         
         <script type="text/javascript">
-            // This crosses a DST boundary in the UK.
-            Morris.Area({
-              element: 'graph',
-              data: [
-                {x: '2013-03-30 22:00:00', y: 3, z: 3},
-                {x: '2013-03-31 00:00:00', y: 2, z: 0},
-                {x: '2013-03-31 02:00:00', y: 0, z: 2},
-                {x: '2013-03-31 04:00:00', y: 4, z: 4}
-              ],
-              xkey: 'x',
-              ykeys: ['y', 'z'],
-              labels: ['Y', 'Z']
+            $(document).ready(function() {
+                $('.summernote').summernote({
+                    height: 350,                 // set editor height
+                    minHeight: null,             // set minimum height of editor
+                    maxHeight: null,             // set maximum height of editor
+                    focus: false                 // set focus to editable area after initializing summernote
+                });
+            });
+
+            var day_data = [
+              {"elapsed": "Enero", "value": 120},
+              {"elapsed": "Febrero", "value": 430},
+              {"elapsed": "Marzo", "value": 510},
+              {"elapsed": "Abril", "value": 119},
+              {"elapsed": "Mayo", "value": 312},
+              {"elapsed": "Junio", "value": 222},
+              {"elapsed": "Agosto", "value": 341},
+              {"elapsed": "Septiembre", "value": 262},
+              {"elapsed": "Octubre", "value": 412},
+              {"elapsed": "Noviembre", "value": 619},
+                {"elapsed": "Diciembre", "value": 529}
+            ];
+            Morris.Line({
+                element: 'graph',
+                data: day_data,
+                xkey: 'elapsed',
+                ykeys: ['value'],
+                labels: ['value'],
+                xLabelAngle: 60,
+                parseTime: false
             });
         </script>
         

@@ -69,30 +69,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Personal-Information -->
-
-                        <!-- Social -->
-<!--
-                        <div class="panel panel-default panel-fill">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Social</h3>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="social-links list-inline m-b-0">
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Skype"><i class="fa fa-skype"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
--->
-                        <!-- Social -->
                     </div>
 
 
@@ -123,57 +99,7 @@
 
                                     <h5 class="header-title text-uppercase m-t-30 m-b-20">Ventas del mes</h5>
 
-                                    <div class="m-b-15">
-                                        <h5>Angular Js <span
-                                                class="pull-right">60%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary"
-                                                 role="progressbar" aria-valuenow="60"
-                                                 aria-valuemin="0" aria-valuemax="100"
-                                                 style="width: 60%">
-                                                <span class="sr-only">60% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-b-15">
-                                        <h5>Javascript <span
-                                                class="pull-right">90%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary"
-                                                 role="progressbar" aria-valuenow="90"
-                                                 aria-valuemin="0" aria-valuemax="100"
-                                                 style="width: 90%">
-                                                <span class="sr-only">90% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-b-15">
-                                        <h5>Wordpress <span
-                                                class="pull-right">80%</span></h5>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary"
-                                                 role="progressbar" aria-valuenow="80"
-                                                 aria-valuemin="0" aria-valuemax="100"
-                                                 style="width: 80%">
-                                                <span class="sr-only">80% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-b-0">
-                                        <h5>HTML5 &amp; CSS3 <span class="pull-right">95%</span>
-                                        </h5>
-                                        <div class="progress m-b-0">
-                                            <div class="progress-bar progress-bar-primary"
-                                                 role="progressbar" aria-valuenow="95"
-                                                 aria-valuemin="0" aria-valuemax="100"
-                                                 style="width: 95%">
-                                                <span class="sr-only">95% Complete</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div id="graph" style="heigh: 200px; text-aling:center"></div>
 
                                 </div>
                             </div>

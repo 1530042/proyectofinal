@@ -11,7 +11,7 @@
         </div>
     </div>
     
-    <div class="row">
+     <div class="row">
         <div class="col-md-12">
             <div class="panel-body">
                 <div class="clearfix">
@@ -31,6 +31,62 @@
             </div>
         </div>
     </div>
+    
+    <div class="row p-t-25">
+        <div class="col-sm-12">
+            <div class="m-b-20 table-responsive">
+
+                <h5>Listado de productos</h5>
+
+                <table id="datatable-responsive"
+                       class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                       width="100%">
+                    <thead>
+                    <tr>
+                        <th>Código de barras</th>
+                        <th>Nombre o descripción del producto</th>
+                        <th>Cantidad mínima</th>
+                        <th>Cantidad actual</th>
+                        <th>Opciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1127480017</td>
+                            <td>Mouse inalámbrico DELL</td>
+                            <td>3</td>
+                            <td>12</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1237880012</td>
+                            <td>Boligrafo punto fino</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-custom waves-effect waves-light ">
+                                    <i class=" mdi mdi-backup-restore"></i>
+                                </button>
+                                <button type="submit" class="btn btn-danger waves-effect waves-light ">
+                                    <i class="mdi mdi-delete"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+    
+   
     
     <div class="row m-t-10">
         <div class="col-sm-6 pull-center">
@@ -62,6 +118,7 @@
                     </tr>
                     </thead>
                     <tbody>
+                        
                     </tbody>
                 </table>
             </div>
