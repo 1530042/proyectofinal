@@ -32,6 +32,25 @@
         </div>
         <!-- End #page-wrapper -->
         
-        <?php include_once('php/inc/librerias.php')?>  
+        <?php include_once('php/inc/librerias.php')?>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#datatable-responsive').DataTable();
+                
+                var table = $('#datatable-fixed-col').DataTable({
+                    scrollY: "300px",
+                    scrollX: true,
+                    scrollCollapse: true,
+                    paging: false,
+                    fixedColumns: {
+                        leftColumns: 1,
+                        rightColumns: 1
+                    }
+                });
+            });
+        </script>
+        
+        
     </body>
 </html>
